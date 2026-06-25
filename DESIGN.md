@@ -185,6 +185,37 @@
 .tag-success { background: rgba(24,169,87,.12); color: var(--success); }
 ```
 
+### Testimonial card (база — `.card`)
+```css
+.testi { display: flex; flex-direction: column; gap: 12px; }
+.testi-quote { font: 800 46px/1 var(--font-ui); color: var(--accent); opacity: .32; }  /* приглушённая кавычка-декор */
+.testi-ava  { width: 42px; height: 42px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); } /* инициалы */
+.testi-name { color: var(--text-1); font-weight: 700; }
+.testi-role { color: var(--text-3); font-size: 13.5px; }
+```
+
+### FAQ accordion (нативный `<details>`, без JS)
+```css
+.faq-item { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; }
+.faq-item:hover, .faq-item[open] { border-color: var(--border-strong); }
+.faq-q { cursor: pointer; list-style: none; color: var(--text-1); font: 700 16.5px/1.4 var(--font-ui); } /* summary */
+.faq-q::-webkit-details-marker { display: none; }
+.faq-chev { color: var(--text-3); transition: transform .25s var(--ease), color .2s; }
+.faq-item[open] .faq-chev { transform: rotate(180deg); color: var(--accent); }   /* индикатор раскрытия */
+```
+- доступность: фокус на `.faq-q` через `:focus-visible` (`--accent-soft`); работает без JS; деградирует под `prefers-reduced-motion`
+
+### App mockup (детальные вкладки программ)
+Панель `.prog-panel` — 2 колонки: `.pp-main` (описание `.pp-intro` + возможности + «кому подходит» + CTA `.pp-cta`) | `.pp-visual` (мини-мокап интерфейса). Стек в 1 колонку на ≤760px.
+```css
+.app-mock { background: var(--surface-2); border: 1px solid var(--border); border-radius: 14px; box-shadow: var(--shadow-soft); }
+.am-bar { background: var(--surface); border-bottom: 1px solid var(--border); }       /* титулбар: иконка + имя + точки */
+.am-row .k { background: var(--surface-hover); } .am-row .v { background: var(--border-strong); } /* строка списка */
+.am-chart span { background: linear-gradient(var(--warm), var(--accent)); }            /* мини-график */
+.am-pill.ok { color: var(--success); }  .am-pill.acc { background: var(--accent-soft); color: var(--accent); } /* статус-плашка */
+```
+- тематические варианты на программу: график (Бухгалтерия), строки-сотрудники (Зарплата), плитки модулей (ERP/УНФ), чек+итог (Касса), меню (Общепит); весь мокап `aria-hidden` — это декор.
+
 ---
 
 ## 5. Layout Principles
