@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <script>document.documentElement.classList.add('js');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1С:Фреш — облачные 1С-программы по подписке</title>
+  <meta name="description" content="Аренда 1С:Бухгалтерии, Зарплаты, УНФ, ERP и Кассы в облаке. Без сервера и установки — работайте из браузера откуда угодно. 30 дней бесплатно.">
+  <meta name="theme-color" content="#FBFAF8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#programs">Перейти к программам</a>
+
+  <!-- NAV -->
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand" aria-label="1С:Фреш — на главную">
+        <span class="brand-mark" aria-hidden="true">1С</span>
+        <span class="brand-name">Фреш</span>
+      </a>
+      <nav class="nav-links" aria-label="Основная навигация">
+        <a class="nav-link" href="#programs">Программы</a>
+        <a class="nav-link" href="#features">Возможности</a>
+        <a class="nav-link" href="#pricing">Тарифы</a>
+        <a class="nav-link" href="#start">Как начать</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn-ghost btn-sm" href="#login">Войти</a>
+        <a class="btn-primary btn-sm" href="#try" data-magnetic>Попробовать</a>
+      </div>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main id="top">
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <div class="eyebrow reveal">Облачные 1С-программы</div>
+        <h1 class="hero-title reveal">Ваша 1С — в <span class="key-gradient">облаке</span>.<br>Работайте откуда угодно.</h1>
+        <p class="hero-sub body-lg reveal">Аренда 1С:Бухгалтерии, Зарплаты, УНФ, ERP и Кассы по подписке. Без сервера, установки и забот об обновлениях — просто откройте браузер.</p>
+        <div class="hero-ctas reveal">
+          <a class="btn-primary" href="#try" data-magnetic>
+            Попробовать 30 дней бесплатно
+            <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn-ghost" href="#pricing">Посмотреть тарифы</a>
+        </div>
+        <ul class="hero-trust reveal" aria-label="Преимущества">
+          <li><svg class="ico-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Без карты при регистрации</li>
+          <li><svg class="ico-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Данные в дата-центрах РФ</li>
+          <li><svg class="ico-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Резервные копии каждый день</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="mock">
+          <div class="mock-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="mock-url">app.1cfresh.com</span>
+          </div>
+          <div class="mock-body">
+            <div class="mock-side">
+              <span class="ms-logo">1С</span>
+              <span class="ms-item is-active"></span>
+              <span class="ms-item"></span>
+              <span class="ms-item"></span>
+              <span class="ms-item"></span>
+            </div>
+            <div class="mock-main">
+              <div class="mock-head"></div>
+              <div class="mock-row"><i></i><i></i><i></i><i class="accent"></i></div>
+              <div class="mock-row"><i></i><i></i><i></i><i></i></div>
+              <div class="mock-row"><i></i><i></i><i class="accent"></i><i></i></div>
+              <div class="mock-row"><i></i><i></i><i></i><i></i></div>
+              <div class="mock-chart">
+                <span style="--h:42%"></span><span style="--h:68%"></span><span style="--h:54%"></span>
+                <span style="--h:82%"></span><span style="--h:60%"></span><span style="--h:94%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mock-badge"><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg> Обновлено автоматически</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST: stats + logos -->
+  <section class="trust">
+    <div class="container">
+      <div class="stats grid-4 reveal">
+        <div class="stat"><div class="stat-num" data-count="12000" data-suffix="+">0</div><div class="stat-label">компаний работают в облаке</div></div>
+        <div class="stat"><div class="stat-num" data-count="99.9" data-suffix="%">0</div><div class="stat-label">аптайм сервиса</div></div>
+        <div class="stat"><div class="stat-num" data-count="20" data-suffix="+">0</div><div class="stat-label">программ 1С в каталоге</div></div>
+        <div class="stat"><div class="stat-num" data-count="24" data-suffix="/7">0</div><div class="stat-label">поддержка специалистов</div></div>
+      </div>
+      <div class="marquee" aria-label="Доступные программы">
+        <div class="marquee-track">
+          <span class="chip">1С:Бухгалтерия</span><span class="chip">1С:Зарплата и кадры</span>
+          <span class="chip">1С:Управление нашей фирмой</span><span class="chip">1С:ERP</span>
+          <span class="chip">1С:Розница</span><span class="chip">1С:Общепит</span>
+          <span class="chip">1С:Документооборот</span><span class="chip">1С:Касса</span>
+          <span class="chip" aria-hidden="true">1С:Бухгалтерия</span><span class="chip" aria-hidden="true">1С:Зарплата и кадры</span>
+          <span class="chip" aria-hidden="true">1С:Управление нашей фирмой</span><span class="chip" aria-hidden="true">1С:ERP</span>
+          <span class="chip" aria-hidden="true">1С:Розница</span><span class="chip" aria-hidden="true">1С:Общепит</span>
+          <span class="chip" aria-hidden="true">1С:Документооборот</span><span class="chip" aria-hidden="true">1С:Касса</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Каталог программ</div>
+        <h2 class="section-h2">Вся линейка 1С — по подписке</h2>
+        <p class="section-sub body-lg">Подключайте нужные программы и платите помесячно. Переключиться или добавить пользователя можно в пару кликов.</p>
+      </div>
+      <div class="grid-3 reveal">
+        <article class="card prog">
+          <span class="card-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></span>
+          <h3 class="card-title">1С:Бухгалтерия</h3>
+          <p class="card-body">Учёт, налоги и отчётность. Сдача в ФНС, ПФР и ФСС прямо из программы.</p>
+          <a class="link card-more" href="#programs-detail">Подробнее →</a>
+        </article>
+        <article class="card prog">
+          <span class="card-icon"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+          <h3 class="card-title">1С:Зарплата и кадры</h3>
+          <p class="card-body">Расчёт зарплаты, кадровый учёт, отчётность по сотрудникам без ошибок.</p>
+          <a class="link card-more" href="#programs-detail">Подробнее →</a>
+        </article>
+        <article class="card prog">
+          <span class="card-icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></span>
+          <h3 class="card-title">1С:Управление фирмой</h3>
+          <p class="card-body">УНФ для малого бизнеса: продажи, склад, деньги и заказы в одном окне.</p>
+          <a class="link card-more" href="#programs-detail">Подробнее →</a>
+        </article>
+        <article class="card prog">
+          <span class="card-icon"><svg viewBox="0 0 24 24"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg></span>
+          <h3 class="card-title">1С:ERP</h3>
+          <p class="card-body">Комплексное управление предприятием: производство, финансы, логистика.</p>
+          <a class="link card-more" href="#programs-detail">Подробнее →</a>
+        </article>
+        <article class="card prog">
+          <span class="card-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2 3h3l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L23 7H6"/></svg></span>
+          <h3 class="card-title">1С:Розница и Касса</h3>
+          <p class="card-body">Магазины и торговые точки: продажи, остатки, 54-ФЗ и онлайн-кассы.</p>
+          <a class="link card-more" href="#programs-detail">Подробнее →</a>
+        </article>
+        <article class="card prog">
+          <span class="card-icon"><svg viewBox="0 0 24 24"><path d="M18 8h1a3 3 0 0 1 0 6h-1"/><path d="M3 8h15v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><path d="M6 2v2M10 2v2M14 2v2"/></svg></span>
+          <h3 class="card-title">1С:Общепит</h3>
+          <p class="card-body">Кафе и рестораны: калькуляции, склад, меню и учёт продаж блюд.</p>
+          <a class="link card-more" href="#programs-detail">Подробнее →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS DETAIL (CSS-only tabs) -->
+  <section id="programs-detail" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Подробнее</div>
+        <h2 class="section-h2">Что умеет каждая программа</h2>
+        <p class="section-sub body-lg">Выберите программу — покажем ключевые возможности и кому она подходит.</p>
+      </div>
+
+      <div class="prog-explorer reveal">
+        <input type="radio" name="prog" id="pg-buh" checked>
+        <input type="radio" name="prog" id="pg-zup">
+        <input type="radio" name="prog" id="pg-unf">
+        <input type="radio" name="prog" id="pg-erp">
+        <input type="radio" name="prog" id="pg-rozn">
+        <input type="radio" name="prog" id="pg-ops">
+
+        <div class="prog-tabs" role="tablist">
+          <label class="prog-tab" for="pg-buh">1С:Бухгалтерия</label>
+          <label class="prog-tab" for="pg-zup">Зарплата и кадры</label>
+          <label class="prog-tab" for="pg-unf">УНФ</label>
+          <label class="prog-tab" for="pg-erp">ERP</label>
+          <label class="prog-tab" for="pg-rozn">Розница и Касса</label>
+          <label class="prog-tab" for="pg-ops">Общепит</label>
+        </div>
+
+        <div class="prog-panels">
+          <article class="prog-panel">
+            <div class="pp-head">
+              <span class="card-icon"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></span>
+              <div><h3 class="card-title">1С:Бухгалтерия</h3><p class="pp-tagline">Учёт, налоги и отчётность в одном месте</p></div>
+            </div>
+            <ul class="pp-features">
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Бухгалтерский и налоговый учёт</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Сдача отчётности в ФНС, ПФР, ФСС</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>НДС, УСН, ОСНО, патент</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Банк, касса, эквайринг</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Зарплата и кадры (базово)</li>
+            </ul>
+            <div class="pp-for"><span class="tag">Кому подходит</span> бухгалтерам, малому и среднему бизнесу</div>
+          </article>
+
+          <article class="prog-panel">
+            <div class="pp-head">
+              <span class="card-icon"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-8 0v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+              <div><h3 class="card-title">1С:Зарплата и кадры</h3><p class="pp-tagline">Расчёт зарплаты и кадровый учёт без ошибок</p></div>
+            </div>
+            <ul class="pp-features">
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Расчёт зарплаты любой сложности</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Кадровый учёт и штатное расписание</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Отчётность по сотрудникам и в фонды</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Больничные, отпуска, командировки</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Воинский учёт</li>
+            </ul>
+            <div class="pp-for"><span class="tag">Кому подходит</span> кадровым службам и расчётчикам</div>
+          </article>
+
+          <article class="prog-panel">
+            <div class="pp-head">
+              <span class="card-icon"><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg></span>
+              <div><h3 class="card-title">1С:Управление нашей фирмой</h3><p class="pp-tagline">Весь малый бизнес в одном окне</p></div>
+            </div>
+            <ul class="pp-features">
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Продажи и простая CRM</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Склад, закупки, остатки</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Деньги и взаиморасчёты</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Заказы и мелкое производство</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Наглядные отчёты для руководителя</li>
+            </ul>
+            <div class="pp-for"><span class="tag">Кому подходит</span> малому бизнесу — «всё в одном»</div>
+          </article>
+
+          <article class="prog-panel">
+            <div class="pp-head">
+              <span class="card-icon"><svg viewBox="0 0 24 24"><path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z"/></svg></span>
+              <div><h3 class="card-title">1С:ERP</h3><p class="pp-tagline">Комплексное управление предприятием</p></div>
+            </div>
+            <ul class="pp-features">
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Производство и планирование</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Финансы и бюджетирование</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Складская логистика</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Закупки и продажи</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Регламентированный учёт и МСФО</li>
+            </ul>
+            <div class="pp-for"><span class="tag">Кому подходит</span> средним и крупным предприятиям</div>
+          </article>
+
+          <article class="prog-panel">
+            <div class="pp-head">
+              <span class="card-icon"><svg viewBox="0 0 24 24"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2 3h3l2.4 12.4a2 2 0 0 0 2 1.6h8.2a2 2 0 0 0 2-1.6L23 7H6"/></svg></span>
+              <div><h3 class="card-title">1С:Розница и Касса</h3><p class="pp-tagline">Магазины, торговые точки и 54-ФЗ</p></div>
+            </div>
+            <ul class="pp-features">
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Онлайн-кассы и 54-ФЗ</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Учёт остатков и продаж</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Маркировка и ЕГАИС</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Скидки и программы лояльности</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Эквайринг и возвраты</li>
+            </ul>
+            <div class="pp-for"><span class="tag">Кому подходит</span> магазинам и торговым точкам</div>
+          </article>
+
+          <article class="prog-panel">
+            <div class="pp-head">
+              <span class="card-icon"><svg viewBox="0 0 24 24"><path d="M18 8h1a3 3 0 0 1 0 6h-1"/><path d="M3 8h15v6a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4z"/><path d="M6 2v2M10 2v2M14 2v2"/></svg></span>
+              <div><h3 class="card-title">1С:Общепит</h3><p class="pp-tagline">Кафе, рестораны и столовые</p></div>
+            </div>
+            <ul class="pp-features">
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Калькуляции и техкарты блюд</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Складской учёт продуктов</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Меню и модификаторы</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Учёт продаж и себестоимости</li>
+              <li><svg class="ico-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Интеграция с кассой</li>
+            </ul>
+            <div class="pp-for"><span class="tag">Кому подходит</span> кафе, ресторанам, столовым</div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Почему 1С:Фреш</div>
+        <h2 class="section-h2">Облако берёт рутину на себя</h2>
+        <p class="section-sub body-lg">Никаких серверов, ручных обновлений и страха потерять базу. Вы занимаетесь делом — инфраструктурой занимаемся мы.</p>
+      </div>
+      <div class="grid-3 reveal">
+        <article class="feature">
+          <span class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></span>
+          <h3 class="card-title">Доступ 24/7 из браузера</h3>
+          <p class="card-body">Работайте из офиса, дома или в дороге — нужен только интернет.</p>
+        </article>
+        <article class="feature">
+          <span class="card-icon"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></span>
+          <h3 class="card-title">Автообновления</h3>
+          <p class="card-body">Новые релизы, формы отчётности и изменения законодательства — сами.</p>
+        </article>
+        <article class="feature">
+          <span class="card-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
+          <h3 class="card-title">Ежедневные бэкапы</h3>
+          <p class="card-body">Резервные копии каждый день — данные не потеряются ни при каких сбоях.</p>
+        </article>
+        <article class="feature">
+          <span class="card-icon"><svg viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.4 8 8 9 4.6-1 8-4 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3 class="card-title">Защита данных</h3>
+          <p class="card-body">Дата-центры в РФ, шифрование и изоляция: ваша база — только ваша.</p>
+        </article>
+        <article class="feature">
+          <span class="card-icon"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></span>
+          <h3 class="card-title">Поддержка 1С</h3>
+          <p class="card-body">Специалисты помогут с запуском, переносом базы и любыми вопросами.</p>
+        </article>
+        <article class="feature">
+          <span class="card-icon"><svg viewBox="0 0 24 24"><rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/></svg></span>
+          <h3 class="card-title">Мобильный доступ</h3>
+          <p class="card-body">Смотрите отчёты и проводите документы с телефона или планшета.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW TO START -->
+  <section id="start" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Как начать</div>
+        <h2 class="section-h2">Запуск за три шага</h2>
+        <p class="section-sub body-lg">От регистрации до работы в программе — несколько минут.</p>
+      </div>
+      <div class="grid-3 steps reveal">
+        <article class="step">
+          <div class="step-num">01</div>
+          <h3 class="card-title">Зарегистрируйтесь</h3>
+          <p class="card-body">Укажите почту и название компании. Карта не нужна — пробный период бесплатный.</p>
+        </article>
+        <article class="step">
+          <div class="step-num">02</div>
+          <h3 class="card-title">Выберите программу</h3>
+          <p class="card-body">Откройте каталог и подключите нужные 1С-программы под свои задачи.</p>
+        </article>
+        <article class="step">
+          <div class="step-num">03</div>
+          <h3 class="card-title">Начните работать</h3>
+          <p class="card-body">Программа уже развёрнута в облаке — заходите в браузере и работайте.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Тарифы</div>
+        <h2 class="section-h2">Платите за то, чем пользуетесь</h2>
+        <p class="section-sub body-lg">Помесячная подписка без скрытых платежей. Меняйте тариф или число пользователей когда нужно.</p>
+      </div>
+      <div class="grid-3 pricing reveal">
+        <article class="card plan">
+          <div class="plan-name">Старт</div>
+          <div class="plan-price"><span class="plan-cur">от</span> 1 200 <span class="plan-per">₽/мес</span></div>
+          <p class="plan-for">Для одного пользователя и одной программы</p>
+          <ul class="plan-list">
+            <li><svg class="ico-check ok" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>1 пользователь</li>
+            <li><svg class="ico-check ok" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>1 программа на выбор</li>
+            <li><svg class="ico-check ok" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Ежедневные бэкапы</li>
+            <li><svg class="ico-check ok" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Базовая поддержка</li>
+          </ul>
+          <a class="btn-ghost btn-block" href="#try">Выбрать</a>
+        </article>
+        <article class="card plan plan-featured">
+          <div class="plan-badge">Рекомендуем</div>
+          <div class="plan-name">Бизнес</div>
+          <div class="plan-price"><span class="plan-cur">от</span> 3 900 <span class="plan-per">₽/мес</span></div>
+          <p class="plan-for">Для команды до 10 человек</p>
+          <ul class="plan-list">
+            <li><svg class="ico-check ok" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>До 10 пользователей</li>
+            <li><svg class="ico-check ok" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>До 3 программ</li>
+            <li><svg class="ico-check ok" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Приоритетная поддержка</li>
+            <li><svg class="ico-check ok" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Помощь с переносом базы</li>
+          </ul>
+          <a class="btn-primary btn-block" href="#try" data-magnetic>Выбрать</a>
+        </article>
+        <article class="card plan">
+          <div class="plan-name">ПРОФ</div>
+          <div class="plan-price"><span class="plan-cur">от</span> 9 900 <span class="plan-per">₽/мес</span></div>
+          <p class="plan-for">Для предприятия с ERP и интеграциями</p>
+          <ul class="plan-list">
+            <li><svg class="ico-check ok" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Без лимита пользователей</li>
+            <li><svg class="ico-check ok" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Все программы каталога</li>
+            <li><svg class="ico-check ok" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Выделенный менеджер</li>
+            <li><svg class="ico-check ok" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>SLA 99,9% и интеграции</li>
+          </ul>
+          <a class="btn-ghost btn-block" href="#try">Выбрать</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section id="try" class="cta-band">
+    <div class="container cta-inner reveal">
+      <h2 class="cta-title">Готовы перенести 1С в облако?</h2>
+      <p class="cta-sub body-lg">Попробуйте 1С:Фреш бесплатно 30 дней. Без карты, без установки — регистрация занимает пару минут.</p>
+      <div class="hero-ctas cta-ctas">
+        <a class="btn-primary" href="#try" data-magnetic>Начать бесплатно
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a class="btn-ghost" href="#login">Войти в кабинет</a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#top" class="brand"><span class="brand-mark" aria-hidden="true">1С</span><span class="brand-name">Фреш</span></a>
+        <p class="footer-tag">Облачные 1С-программы по подписке. Работайте из браузера откуда угодно.</p>
+      </div>
+      <div class="footer-col">
+        <div class="footer-h">Программы</div>
+        <ul><li><a class="footer-link" href="#programs">Бухгалтерия</a></li><li><a class="footer-link" href="#programs">Зарплата и кадры</a></li><li><a class="footer-link" href="#programs">УНФ</a></li><li><a class="footer-link" href="#programs">ERP</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-h">Компания</div>
+        <ul><li><a class="footer-link" href="#features">Возможности</a></li><li><a class="footer-link" href="#pricing">Тарифы</a></li><li><a class="footer-link" href="#start">Как начать</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-h">Поддержка</div>
+        <ul><li><a class="footer-link" href="tel:88003337227">8 (800) 333-72-27</a></li><li><a class="footer-link" href="mailto:support@1cfresh.com">support@1cfresh.com</a></li></ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 · демо-макет. «1С», «1С:Фреш» и названия программ — товарные знаки их правообладателей; материал не аффилирован с фирмой «1С».</span>
+      <a class="footer-link" href="#top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
