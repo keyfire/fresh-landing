@@ -108,3 +108,31 @@ const inView = (el, margin = 0.96) => {
   window.addEventListener('load', sweep);
   setTimeout(sweep, 500);
 })();
+
+/* ---------- Theme toggle (dark / light, persisted) ---------- */
+(() => {
+  const root = document.documentElement;
+  const btn = document.querySelector('.theme-toggle');
+  const meta = document.querySelector('meta[name="theme-color"]');
+  const colors = { dark: '#131215', light: '#FBFAF8' };
+  const current = () => (root.getAttribute('data-theme') === 'light' ? 'light' : 'dark');
+  const sync = (t) => {
+    if (meta) meta.setAttribute('content', colors[t] || colors.dark);
+    if (btn) btn.setAttribute('aria-label', t === 'light' ? 'Включить тёмную тему' : 'Включить светлую тему');
+  };
+
+  // data-theme уже выставлен инлайн-скриптом в <head>; синхронизируем meta и подпись
+  sync(current());
+  if (!btn) return;
+
+  btn.addEventListener('click', () => {
+    const next = current() === 'light' ? 'dark' : 'light';
+    if (!reduce) {
+      root.classList.add('theme-switching');
+      requestAnimationFrame(() => requestAnimationFrame(() => root.classList.remove('theme-switching')));
+    }
+    root.setAttribute('data-theme', next);
+    sync(next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+})();

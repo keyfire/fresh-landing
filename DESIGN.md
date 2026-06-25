@@ -71,6 +71,21 @@
 - зелёный `--success` — только для галочек/«включено» в тарифах и списках преимуществ
 - текст по уровням: заголовок `--text-1`, основной `--text-2`, вспомогательный `--text-3`, мелкие метки `--text-4`
 
+**Светлая тема** (`[data-theme="light"]` на `<html>`; переключатель в nav, выбор в `localStorage`, по умолчанию — системная `prefers-color-scheme`):
+```css
+:root[data-theme="light"] {
+  --bg: #FBFAF8; --surface: #FFFFFF; --surface-2: #F3EFE8; --surface-hover: #ECE6DD;
+  --border: rgba(33,28,22,.12); --border-strong: rgba(33,28,22,.22);
+  --text-1: #1E1B17; --text-2: #4A443B; --text-3: #6E665B; --text-4: #9A9385;
+  --accent-hover: #C51C14; --accent-soft: rgba(226,35,26,.10); /* --accent (#E2231A) тот же — брендовый */
+  --warm: #C2780A; --success: #149A50;                         /* темнее ради контраста на белом */
+  --bg-rgb: 251,250,248;                                       /* для rgba-блюра sticky-nav */
+  /* --shadow-*: мягкие тёплые тени вместо чёрных (см. styles.css) */
+}
+```
+- `--accent` (#E2231A) одинаков в обеих темах — меняются только производные под фон
+- инициализация темы — в инлайн-скрипте `<head>` (без FOUC); свап мгновенный (`.theme-switching` гасит transition на время переключения)
+
 ---
 
 ## 3. Typography Rules
@@ -165,6 +180,17 @@
 .nav-link { color: var(--text-2); font: 600 15px/1 var(--font-ui); transition: color .14s; }
 .nav-link:hover { color: var(--text-1); }
 ```
+
+### Theme toggle (кнопка-иконка в nav)
+```css
+.theme-toggle { width: 40px; height: 40px; border-radius: 10px;
+  background: var(--surface); border: 1px solid var(--border-strong); color: var(--text-2); }
+.theme-toggle:hover { color: var(--text-1); border-color: var(--text-3); transform: translateY(-2px); }
+.theme-toggle .ico-moon { display: none; }                                    /* dark → солнце */
+:root[data-theme="light"] .theme-toggle .ico-sun { display: none; }           /* light → луна */
+:root[data-theme="light"] .theme-toggle .ico-moon { display: block; }
+```
+- остаётся видимой и на мобильном (внутри `.nav-cta`, рядом с CTA); JS пишет выбор в `localStorage` и синхронит `<meta name="theme-color">`
 
 ### Links
 ```css
